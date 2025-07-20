@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prosto+One&display=swap');
 
 @import 'mixins';
+@import 'colors';
 
 * {
   box-sizing: border-box;
@@ -11,19 +12,121 @@
   margin: auto;
 }
 
+.input-ui {
+  @include input-ui;
+
+  width: 500px;
+}
+
 section.feedback {
   .feedback_wrapper {
     display: flex;
     border-radius: 40px;
     overflow: hidden;
+
+
     form.form {
       width: 880px;
-      background: #6a50ba;
+      background: $darkPurple;
+      padding: 60px;
+      position: relative;
+
+      .bgFeedback {
+        position: absolute;
+        width: 273px;
+        right: 0;
+        top: 0;
+
+      }
+
+      .title {
+        font-family: Prosto One;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 44px;
+        color: $white;
+        margin-bottom: 12px;
+      }
+
+      .pre_title {
+        font-family: Jost;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        color: $white;
+        margin-bottom: 40px;
+      }
+
+      .wrapper_inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .approval {
+        display: flex;
+        gap: 8px;
+        width: 500px;
+        margin-top: 24px;
+        cursor: pointer;
+
+        .approval_description {
+          font-family: Jost;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: $white;
+        }
+      }
+
+      .group_buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 24px;
+
+
+
+        button.send {
+          padding: 12px;
+          border-radius: 8px;
+          background: $orange;
+          border: none;
+          cursor: pointer;
+
+          font-family: Jost;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: $white;
+        }
+
+        .send_telegram {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px;
+          background: $lightPurple2;
+          border-radius: 8px;
+
+          img {
+            width: 24px;
+          }
+          span {
+            font-family: Jost;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+          }
+        }
+      }
     }
 
     .wrapper_content {
       width: 600px;
-      background: #a689ff;
+      background: $lightPurple;
       padding: 60px;
 
       .title {
@@ -31,7 +134,7 @@ section.feedback {
         font-weight: 400;
         font-size: 28px;
         line-height: 32px;
-        color: #fff;
+        color: $white;
       }
 
       .wrapper_description {
@@ -49,7 +152,7 @@ section.feedback {
             width: 64px;
             height: 64px;
             border-radius: 16px;
-            background: #fff;
+            background: $white;
             position: relative;
             flex-shrink: 0;
 
@@ -63,7 +166,7 @@ section.feedback {
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
-            color: #fff;
+            color: $white;
           }
         }
       }
