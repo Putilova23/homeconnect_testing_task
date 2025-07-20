@@ -2,21 +2,27 @@
 
 @import 'mixins';
 @import 'colors';
+@import 'breakpoints';
 @import 'intl-tel-input/build/css/intlTelInput.min.css';
+
 
 * {
   box-sizing: border-box;
 }
 
 .content {
-  max-width: 1480px;
+  max-width: $desktop;
   margin: auto;
+
+  @media screen and (max-width: $desktop) {
+    max-width: $tablet;
+    
+  }
 }
 
 .input-ui {
   @include input-ui;
-
-  width: 500px;
+  width: 100%;
 }
 
 .checkbox-ui {
@@ -29,12 +35,21 @@ section.feedback {
     border-radius: 40px;
     overflow: hidden;
 
+    @media screen and (max-width: $desktop) { 
+        flex-direction: column;
+        
+    }
+
 
     form.form {
       width: 880px;
       background: $darkPurple;
       padding: 60px;
       position: relative;
+
+      @media screen and (max-width: $desktop) {
+        width: 100%;
+      } 
 
       .bgFeedback {
         position: absolute;
@@ -51,6 +66,10 @@ section.feedback {
         line-height: 44px;
         color: $white;
         margin-bottom: 12px;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 32px;
+        }
       }
 
       .pre_title {
@@ -60,12 +79,21 @@ section.feedback {
         line-height: 24px;
         color: $white;
         margin-bottom: 40px;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 18px; 
+        }
       }
 
       .wrapper_inputs {
         display: flex;
         flex-direction: column;
         gap: 12px;
+        width: 500px;
+
+        @media screen and (max-width: $desktop) {
+            width: 420px;
+        }
       }
 
       .approval {
@@ -74,6 +102,10 @@ section.feedback {
         width: 500px;
         margin-top: 24px;
         cursor: pointer;
+
+        @media screen and (max-width: $desktop) {
+            width: 420px;
+        }
 
         .approval_description {
           font-family: Jost;
@@ -134,6 +166,10 @@ section.feedback {
       background: $lightPurple;
       padding: 60px;
 
+      @media screen and (max-width: $desktop) {
+            width: 100%;
+      }
+
       .title {
         font-family: Prosto One;
         font-weight: 400;
@@ -148,10 +184,20 @@ section.feedback {
         gap: 16px;
         margin-top: 32px;
 
+        @media screen and (max-width: $desktop) {
+          flex-direction: row;
+          flex-wrap: wrap;  
+    
+        }
+
         .description_item {
           display: flex;
           align-items: center;
           gap: 16px;
+
+          @media screen and (max-width: $desktop) {
+            width: 296px;
+          }
 
           .wrapper_icon {
             width: 64px;
