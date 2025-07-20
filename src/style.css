@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prosto+One&display=swap";*{ box-sizing:border-box }
+@import"https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prosto+One&display=swap";@import'intl-tel-input/build/css/intlTelInput.min.css';*{ box-sizing:border-box }
 .content{ max-width:1480px; margin:auto }
 .input-ui{ background:#fff; border:2px solid #edeef0; padding:12px; border-radius:8px; font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#101828; width:500px }
 .input-ui::placeholder{ font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#b6bbc7 }
