@@ -5,6 +5,7 @@
 .input-ui{ background:#fff; border:2px solid #edeef0; padding:12px; border-radius:8px; font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#101828; width:100% }
 .input-ui::placeholder{ font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#b6bbc7 }
 .input-ui:focus{ border-color:#fb9505; outline:none }
+.input-ui.tel-input{ padding-left:40px }
 .checkbox-ui{ width:20px; height:20px; max-width:20px; min-width:20px; max-height:20px; min-height:20px; border-radius:4px; overflow:hidden; position:relative; display:block }
 .checkbox-ui input{ position:absolute }
 .checkbox-ui span{ position:absolute; top:0; left:0; right:0; bottom:0; border:2px solid #fff }

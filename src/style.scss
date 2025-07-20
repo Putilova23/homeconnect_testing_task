@@ -21,6 +21,10 @@
 .input-ui {
   @include input-ui;
   width: 100%;
+
+  &.tel-input {
+    padding-left: 40px;
+  }
 }
 
 .checkbox-ui {
