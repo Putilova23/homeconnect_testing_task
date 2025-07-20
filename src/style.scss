@@ -1,4 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prosto+One&display=swap');
+
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
 .content {
-    max-width: 1480px;
-    margin: auto;
+  max-width: 1480px;
+  margin: auto;
+}
+
+section.feedback {
+  .feedback_wrapper {
+    display: flex;
+    border-radius: 40px;
+    overflow: hidden;
+    form.form {
+      width: 880px;
+      background: #6a50ba;
+    }
+
+    .wrapper_content {
+      width: 600px;
+      background: #a689ff;
+      padding: 60px;
+
+      .title {
+        font-family: Prosto One;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        color: #fff;
+      }
+
+      .wrapper_description {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+
+        .description_item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          .wrapper_icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            background: #fff;
+            position: relative;
+            flex-shrink: 0;
+
+            img.icon {
+              width: 32px;
+              @include center-absolute;
+            }
+          }
+          .description {
+            font-family: Jost;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
