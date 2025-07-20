@@ -5,7 +5,6 @@
 @import 'breakpoints';
 @import 'intl-tel-input/build/css/intlTelInput.min.css';
 
-
 * {
   box-sizing: border-box;
 }
@@ -16,7 +15,6 @@
 
   @media screen and (max-width: $desktop) {
     max-width: $tablet;
-    
   }
 }
 
@@ -26,7 +24,7 @@
 }
 
 .checkbox-ui {
-    @include checkbox-ui;
+  @include checkbox-ui;
 }
 
 section.feedback {
@@ -35,11 +33,13 @@ section.feedback {
     border-radius: 40px;
     overflow: hidden;
 
-    @media screen and (max-width: $desktop) { 
-        flex-direction: column;
-        
+    @media screen and (max-width: $desktop) {
+      flex-direction: column;
     }
 
+    @media screen and (max-width: $tablet) {
+      border-radius: 0;      
+    }
 
     form.form {
       width: 880px;
@@ -49,7 +49,11 @@ section.feedback {
 
       @media screen and (max-width: $desktop) {
         width: 100%;
-      } 
+      }
+
+      @media screen and (max-width: $tablet) {
+        padding: 40px 24px;
+      }
 
       .bgFeedback {
         position: absolute;
@@ -57,6 +61,9 @@ section.feedback {
         right: 0;
         top: 0;
 
+        @media screen and (max-width: $tablet) {
+          display: none;
+        }
       }
 
       .title {
@@ -68,7 +75,7 @@ section.feedback {
         margin-bottom: 12px;
 
         @media screen and (max-width: $tablet) {
-            font-size: 32px;
+          font-size: 32px;
         }
       }
 
@@ -81,7 +88,7 @@ section.feedback {
         margin-bottom: 40px;
 
         @media screen and (max-width: $tablet) {
-            font-size: 18px; 
+          font-size: 18px;
         }
       }
 
@@ -92,7 +99,11 @@ section.feedback {
         width: 500px;
 
         @media screen and (max-width: $desktop) {
-            width: 420px;
+          width: 420px;
+        }
+
+        @media screen and (max-width: $tablet) {
+          width: 100%;
         }
       }
 
@@ -104,7 +115,11 @@ section.feedback {
         cursor: pointer;
 
         @media screen and (max-width: $desktop) {
-            width: 420px;
+          width: 420px;
+        }
+
+        @media screen and (max-width: $tablet) {
+          width: 100%;
         }
 
         .approval_description {
@@ -122,7 +137,10 @@ section.feedback {
         gap: 16px;
         margin-top: 24px;
 
-
+        @media screen and (max-width: $tablet) {
+          flex-direction: column;
+          align-items: stretch;
+        }
 
         button.send {
           padding: 12px;
@@ -141,7 +159,7 @@ section.feedback {
         .send_telegram {
           text-decoration: none;
           display: flex;
-          align-items: center;
+          justify-content: center;
           gap: 8px;
           padding: 12px;
           background: $lightPurple2;
@@ -167,7 +185,11 @@ section.feedback {
       padding: 60px;
 
       @media screen and (max-width: $desktop) {
-            width: 100%;
+        width: 100%;
+      }
+
+      @media screen and (max-width: $tablet) {
+        padding: 40px 24px;
       }
 
       .title {
@@ -176,6 +198,10 @@ section.feedback {
         font-size: 28px;
         line-height: 32px;
         color: $white;
+
+        @media screen and (max-width: $tablet) {
+          font-size: 18px;
+        }
       }
 
       .wrapper_description {
@@ -186,8 +212,7 @@ section.feedback {
 
         @media screen and (max-width: $desktop) {
           flex-direction: row;
-          flex-wrap: wrap;  
-    
+          flex-wrap: wrap;
         }
 
         .description_item {
@@ -207,9 +232,18 @@ section.feedback {
             position: relative;
             flex-shrink: 0;
 
+            @media screen and (max-width: $tablet) {
+              width: 48px;
+              height: 48px;
+            }
+
             img.icon {
               width: 32px;
               @include center-absolute;
+
+              @media screen and (max-width: $tablet) {
+                width: 24px;
+              }
             }
           }
           .description {
@@ -218,6 +252,10 @@ section.feedback {
             font-size: 18px;
             line-height: 26px;
             color: $white;
+
+            @media screen and (max-width: $tablet) {
+              font-size: 16px;
+            }
           }
         }
       }
