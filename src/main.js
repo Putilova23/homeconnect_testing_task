@@ -2,7 +2,8 @@ import 'reset-css';
 import './style.scss';
 import intlTelInput from 'intl-tel-input';
 
-const telInputs = document.querySelectorAll('.tel-input');
+window.addEventListener("load", () => {
+    const telInputs = document.querySelectorAll('.tel-input');
 
 telInputs.forEach(item => {
   intlTelInput(item, {
@@ -10,3 +11,4 @@ telInputs.forEach(item => {
     loadUtils: () => import('intl-tel-input/utils'),
   });
 });
+})
