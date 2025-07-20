@@ -2,7 +2,7 @@
 .content{ max-width:1480px; margin:auto }
 @media screen and (max-width:1480px){ .content{max-width:728px }
 }
-.input-ui{ background:#fff; border:2px solid #edeef0; padding:12px; border-radius:8px; font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#101828; width:100% }
+.input-ui{ background:#fff; border:2px solid #edeef0; padding:10px; border-radius:8px; font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#101828; width:100% }
 .input-ui::placeholder{ font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#b6bbc7 }
 .input-ui:focus{ border-color:#fb9505; outline:none }
 .input-ui.tel-input{ padding-left:40px }
@@ -27,10 +27,10 @@ section.feedback .feedback_wrapper form.form .bgFeedback{ position:absolute; wid
 @media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .bgFeedback{display:none }
 }
 section.feedback .feedback_wrapper form.form .title{ font-family:Prosto One; font-weight:400; font-size:42px; line-height:44px; color:#fff; margin-bottom:12px }
-@media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .title{font-size:32px }
+@media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .title{font-size:32px; line-height:38px; margin-bottom:8px }
 }
 section.feedback .feedback_wrapper form.form .pre_title{ font-family:Jost; font-weight:400; font-size:24px; line-height:24px; color:#fff; margin-bottom:40px }
-@media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .pre_title{font-size:18px }
+@media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .pre_title{font-size:18px; margin-bottom:32px }
 }
 section.feedback .feedback_wrapper form.form .wrapper_inputs{ display:flex; flex-direction:column; gap:12px; width:500px }
 @media screen and (max-width:1480px){ section.feedback .feedback_wrapper form.form .wrapper_inputs{width:420px }
@@ -42,9 +42,9 @@ section.feedback .feedback_wrapper form.form .approval{ display:flex; gap:8px; w
 }
 @media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .approval{width:100% }
 }
-section.feedback .feedback_wrapper form.form .approval .approval_description{ font-family:Jost; font-weight:400; font-size:12px; line-height:16px; color:#fff }
+section.feedback .feedback_wrapper form.form .approval .approval_description{ font-family:Jost; font-weight:400; font-size:12px; line-height:16px; color:#fff; padding:2px 0 }
 section.feedback .feedback_wrapper form.form .group_buttons{ display:flex; align-items:center; gap:16px; margin-top:24px }
-@media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .group_buttons{flex-direction:column; align-items:stretch }
+@media screen and (max-width:728px){ section.feedback .feedback_wrapper form.form .group_buttons{flex-direction:column; align-items:stretch; gap:8px }
 }
 section.feedback .feedback_wrapper form.form .group_buttons button.send{ padding:12px; border-radius:8px; background:#fb9505; border:none; cursor:pointer; font-family:Jost; font-weight:500; font-size:16px; line-height:24px; color:#fff }
 section.feedback .feedback_wrapper form.form .group_buttons .send_telegram{ text-decoration:none; display:flex; justify-content:center; gap:8px; padding:12px; background:#8267d8; border-radius:8px }
@@ -61,15 +61,17 @@ section.feedback .feedback_wrapper .wrapper_content .title{ font-family:Prosto O
 section.feedback .feedback_wrapper .wrapper_content .wrapper_description{ display:flex; flex-direction:column; gap:16px; margin-top:32px }
 @media screen and (max-width:1480px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description{flex-direction:row; flex-wrap:wrap }
 }
+@media screen and (max-width:728px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description{margin-top:24px }
+}
 section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item{ display:flex; align-items:center; gap:16px }
 @media screen and (max-width:1480px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item{width:296px }
 }
 section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .wrapper_icon{ width:64px; height:64px; border-radius:16px; background:#fff; position:relative; flex-shrink:0 }
-@media screen and (max-width:728px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .wrapper_icon{width:48px; height:48px }
+@media screen and (max-width:728px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .wrapper_icon{width:48px; height:48px; border-radius:12px }
 }
 section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .wrapper_icon img.icon{ width:32px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) }
 @media screen and (max-width:728px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .wrapper_icon img.icon{width:24px }
 }
 section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .description{ font-family:Jost; font-weight:400; font-size:18px; line-height:26px; color:#fff }
-@media screen and (max-width:728px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .description{font-size:16px }
+@media screen and (max-width:1480px){ section.feedback .feedback_wrapper .wrapper_content .wrapper_description .description_item .description{font-size:16px; line-height:20px }
 }

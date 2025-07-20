@@ -42,7 +42,7 @@ section.feedback {
     }
 
     @media screen and (max-width: $tablet) {
-      border-radius: 0;      
+      border-radius: 0;
     }
 
     form.form {
@@ -80,6 +80,8 @@ section.feedback {
 
         @media screen and (max-width: $tablet) {
           font-size: 32px;
+          line-height: 38px;
+          margin-bottom: 8px;
         }
       }
 
@@ -93,6 +95,7 @@ section.feedback {
 
         @media screen and (max-width: $tablet) {
           font-size: 18px;
+          margin-bottom: 32px;
         }
       }
 
@@ -132,6 +135,7 @@ section.feedback {
           font-size: 12px;
           line-height: 16px;
           color: $white;
+          padding: 2px 0;
         }
       }
 
@@ -144,6 +148,7 @@ section.feedback {
         @media screen and (max-width: $tablet) {
           flex-direction: column;
           align-items: stretch;
+          gap: 8px;
         }
 
         button.send {
@@ -219,6 +224,10 @@ section.feedback {
           flex-wrap: wrap;
         }
 
+        @media screen and (max-width: $tablet) {
+          margin-top: 24px;
+        }
+
         .description_item {
           display: flex;
           align-items: center;
@@ -239,6 +248,7 @@ section.feedback {
             @media screen and (max-width: $tablet) {
               width: 48px;
               height: 48px;
+              border-radius: 12px;
             }
 
             img.icon {
@@ -257,8 +267,9 @@ section.feedback {
             line-height: 26px;
             color: $white;
 
-            @media screen and (max-width: $tablet) {
+            @media screen and (max-width: $desktop) {
               font-size: 16px;
+              line-height: 20px;
             }
           }
         }

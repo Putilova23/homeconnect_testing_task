@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 @mixin center-absolute {
   position: absolute;
@@ -10,7 +10,7 @@
 @mixin input-ui {
   background: $white;
   border: 2px solid $gray;
-  padding: 12px;
+  padding: 10px;
   border-radius: 8px;
 
   font-family: Jost;
