@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,88 +8,80 @@
   </head>
   <body>
     <section class="feedback">
-      <div class="content">
+      <main class="content">
         <div class="feedback_wrapper">
           <form class="form">
-           
-            <img src="./public/images/bgFeedback.png" alt="" class="bgFeedback">
+            <img src="./public/images/bgFeedback.png" alt="" class="bgFeedback" />
 
-            <h1 class="title">Оставляй заявку</h1>
-            <h3 class="pre_title">и подключайся прямо сейчас</h3>
-            <div class="wrapper_inputs">
+            <header>
+              <h1 class="title">Оставляй заявку</h1>
+              <h3 class="pre_title">и подключайся прямо сейчас</h3>
+            </header>
+
+            <fieldset class="wrapper_inputs">
               <input type="text" class="input-ui" placeholder="Как к вам обращаться?" />
+              <input type="text" class="input-ui tel-input" />
+            </fieldset>
 
-            <input type="text" class="input-ui tel-input" placeholder="(999) 999-99-99" />
-            </div>
             <label class="approval">
-              <label class="checkbox-ui">
-                <input type="checkbox">
+              <span class="checkbox-ui">
+                <input type="checkbox" />
                 <span></span>
-                <img src="./public/images/markIcon2.svg" alt="">
+                <img src="./public/images/markIcon2.svg" alt="" />
+              </span>
+              <span class="approval_description">
+                Я согласен(на) на обработку моих персональных данных и с политикой обработки персональных данных
+              </span>
             </label>
-              <span class="approval_description">Я согласен(на) на обработку моих персональных данных и с политикой обработки персональных данных</span>
-            </label>
+
             <div class="group_buttons">
               <button class="send">Отправить</button>
               <a href="https://t.me/AlenaPutilovaa" class="send_telegram" target="_blank">
-                  <img src="./public/images/tgIcon.svg" alt="">
-                  <span>Связаться в телеграм</span>
+                <img src="./public/images/tgIcon.svg" alt="" />
+                <span>Связаться в телеграм</span>
               </a>
             </div>
-        
           </form>
-          <div class="wrapper_content">
+
+          <aside class="wrapper_content">
             <h1 class="title">Наши преимущетсва</h1>
-            <div class="wrapper_description">
-              <div class="description_item">
-                <div class="wrapper_icon">
+
+            <ul class="wrapper_description">
+              <li class="description_item">
+                <span class="wrapper_icon">
                   <img src="./public/images/markIcon.svg" alt="" class="icon" />
-                </div>
+                </span>
                 <p class="description">Более 10 лет опыта</p>
-              </div>
+              </li>
 
-              <div class="description_item">
-                <div class="wrapper_icon">
-                  <img
-                    src="./public/images/crownIcon.svg"
-                    alt=""
-                    class="icon"
-                  />
-                </div>
-                <p class="description">
-                  Индивидуальный план работы с каждым клиентом
-                </p>
-              </div>
+              <li class="description_item">
+                <span class="wrapper_icon">
+                  <img src="./public/images/crownIcon.svg" alt="" class="icon" />
+                </span>
+                <p class="description">Индивидуальный план работы с каждым клиентом</p>
+              </li>
 
-              <div class="description_item">
-                <div class="wrapper_icon">
+              <li class="description_item">
+                <span class="wrapper_icon">
                   <img src="./public/images/callIcon.svg" alt="" class="icon" />
-                </div>
-                <p class="description">
-                  Стабильная коммуникация и ведение отчётности
-                </p>
-              </div>
+                </span>
+                <p class="description">Стабильная коммуникация и ведение отчётности</p>
+              </li>
 
-              <div class="description_item">
-                <div class="wrapper_icon">
-                  <img
-                    src="./public/images/peoplesIcon.svg"
-                    alt=""
-                    class="icon"
-                  />
-                </div>
+              <li class="description_item">
+                <span class="wrapper_icon">
+                  <img src="./public/images/peoplesIcon.svg" alt="" class="icon" />
+                </span>
                 <p class="description">
-                  Команда специалистов готовых погрузиться в ваш бизнес и
-                  вывести его на новый уровень
+                  Команда специалистов готовых погрузиться в ваш бизнес и вывести его на новый уровень
                 </p>
-              </div>
-            </div>
-          </div>
+              </li>
+            </ul>
+          </aside>
         </div>
-      </div>
+      </main>
     </section>
 
-    <section class="about"></section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
