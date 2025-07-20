@@ -32,3 +32,47 @@
     outline: none;
   }
 }
+
+@mixin checkbox-ui {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  min-width: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+
+  input {
+    position: absolute;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid $white;
+  }
+
+  img {
+    visibility: hidden;
+    width: 12px;
+    @include center-absolute;
+  }
+
+  input:checked ~ span {
+    background: $orange;
+    border: none;
+  }
+
+  input:checked ~ img {
+    visibility: visible;
+  }
+  input {
+    visibility: hidden;
+  }
+}

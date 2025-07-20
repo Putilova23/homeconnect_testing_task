@@ -3,6 +3,8 @@
 .input-ui{ background:#fff; border:2px solid #edeef0; padding:12px; border-radius:8px; font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#101828; width:500px }
 .input-ui::placeholder{ font-family:Jost; font-weight:400; font-size:16px; line-height:24px; color:#b6bbc7 }
 .input-ui:focus{ border-color:#fb9505; outline:none }
+.checkbox-ui{ width:20px; height:20px }
+.checkbox-ui input{ visibility:hidden }
 section.feedback .feedback_wrapper{ display:flex; border-radius:40px; overflow:hidden }
 section.feedback .feedback_wrapper form.form{ width:880px; background:#6a50ba; padding:60px; position:relative }
 section.feedback .feedback_wrapper form.form .bgFeedback{ position:absolute; width:273px; right:0; top:0 }

@@ -19,6 +19,10 @@
   width: 500px;
 }
 
+.checkbox-ui {
+    @include checkbox-ui;
+}
+
 section.feedback {
   .feedback_wrapper {
     display: flex;
